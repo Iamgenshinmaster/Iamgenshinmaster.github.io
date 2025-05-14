@@ -1,260 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <title>return的个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="return的个人博客">
-<meta property="og:url" content="http://iamgenshinmaster.github.io/index.html">
-<meta property="og:site_name" content="return的个人博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Haoyang Du">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="return的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <title>Return的三角洲行动改枪码网站</title>
+    <style> /* 存放CSS的样式规则 */
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;/* 设置默认字体 */
+            background: #0c0c0c; /* 深色背景 */
+            color: white;/* 文字颜色 */
+            margin: 0;/* 消除默认边距 */
+            padding: 20px;/* 内容区留白 */
+        }
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+        /* 页面内容容器，控制最大宽度和居中 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-  
-  
-<meta name="generator" content="Hexo 7.1.1"></head>
+            /* 标题居中样式 */
+        h1 {
+            text-align: center;/* 文字水平居中 */
+            margin: 20px 0;/* 上下边距20px，左右自动 */
+        }
+
+        /* 每个武器的卡片式布局 */
+        .gun-card {
+            background: #2d2d2d;/* 卡片背景色 */
+            border-radius: 10px;/* 圆角效果 */
+            padding: 20px;/* 内边距 */
+            margin: 15px;/* 外间距 */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);/* 立体阴影 */
+            transition: transform 0.3s;/* 悬停动画过渡 */
+        }
+        .gun-card:hover {
+            transform: translateY(-5px);/* 悬停上移效果 */
+        }
+
+        .desc-container {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* 元素间距 */
+        margin: 12px 0;
+        }
+
+        .config-text {
+            margin: 0;
+            flex-grow: 1; /* 自动占满剩余空间 */
+        }
+
+        .price-badge {
+            flex-shrink: 0; /* 防止价格被挤压 */
+            background: #4CAF50;
+            padding: 6px 15px;
+            border-radius: 20px;
+        }
+
+        /* 名称与价格行布局 */
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        /* 每个改枪方案的价格 */  
+        .price-tag {
+            background: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .price-tag:hover {
+            transform: scale(1.05); /* 悬停放大效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* 改枪码展示区域 */
+        .code-box {
+            background: #333;/* 深灰背景 */
+            padding: 15px;
+            border-radius: 6px;/* 小圆角 */
+            position: relative;/* 为复制提示定位做准备 */
+            cursor: pointer;/* 鼠标手型 */
+            font-family: monospace;/* 等宽字体适合代码显示 */
+            margin: 10px 0;
+        }
+
+        .copy-notice {
+            position: absolute;/* 绝对定位 */
+            right: 10px;/* 定位在右上角 */
+            top: 5px;
+
+            color: #00ff00; /* 荧光绿提示色 */
+            display: none;/* 默认隐藏 */
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 480px) {
+            .title-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .price-tag {
+                margin-top: 8px;
+            }
+        }
+        /* 一行放俩个的响应式设计 */
+        @media (min-width: 768px) {
+            .card-container {
+                display: grid; /* 启用网格布局 */
+                grid-template-columns: repeat(2, 1fr);/* 双列布局 */
+                gap: 20px;/* 列间距 */
+            }
+        }
+
+    </style>
+</head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">return的个人博客</a>
-      </h1>
-      
+    <div class="container">
+        <h1>三角洲行动性价比与满改改枪码分享</h1>
+        <div class="card-container">
+
+            <!-- M14 -->
+            <div class="gun-card">
+                <h2>M14射手步枪</h2>
+                <img src="./枪械图片/原皮/M14.png" alt="武器预览" style="width:100%; max-width:400px; border-radius:8px;">
+                
+                <div class="desc-container">
+                    <p class="config-text">满改方案--密令+沙暴+EBR枪托</p>
+                    <div class="price-badge">$80w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M14射手步枪-烽火地带-6G956PC0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">半改方案1--加枪身系统不加枪管版本</p>
+                    <div class="price-badge">$50w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M14射手步枪-烽火地带-6G93QPS0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">半改方案2--加枪管不加枪身系统版本</p>
+                    <div class="price-badge">$50w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M14射手步枪-烽火地带-6G95E8G0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">青春版</p>
+                    <div class="price-badge">$30w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M14射手步枪-烽火地带-6G95EJ40BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">丐中丐</p>
+                    <div class="price-badge">$20w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M14射手步枪-烽火地带-6G7659G0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- M7 -->
+            <div class="gun-card">
+                <h2>M7战斗步枪</h2>
+                <img src="./枪械图片/原皮/M7.png" alt="武器预览" style="width:100%; max-width:400px; border-radius:8px;">
+                
+                <div class="desc-container">
+                    <p class="config-text">满改方案--沙暴+共振+长枪管</p>
+                    <div class="price-badge">$60w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M7战斗步枪-烽火地带-6G95FAO0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">半改方案</p>
+                    <div class="price-badge">$30w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>M7战斗步枪-烽火地带-6G8VCH00BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- K437 -->
+            <div class="gun-card">
+                <h2>K437突击步枪</h2>
+                <img src="./枪械图片/原皮/K437.png" alt="武器预览" style="width:100%; max-width:400px; border-radius:8px;">
+                
+                <div class="desc-container">
+                    <p class="config-text">满改方案1--水平+共振+长枪管+45发+3倍</p>
+                    <div class="price-badge">$60w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K437突击步枪-烽火地带-6G95J880BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">满改方案2--消音枪管+共振+3倍</p>
+                    <div class="price-badge">$45w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K437突击步枪-烽火地带-6G95JEG0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">青春版方案--不要枪管！</p>
+                    <div class="price-badge">$25w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K437突击步枪-烽火地带-6G7RI6C0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- K416 -->
+            <div class="gun-card">
+                <h2>K416突击步枪</h2>
+                <img src="./枪械图片/原皮/K416.png" alt="武器预览" style="width:100%; max-width:400px; border-radius:8px;">
+                
+                <div class="desc-container">
+                    <p class="config-text">满改方案1--沙暴+共振+长枪管</p>
+                    <div class="price-badge">$60w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K416突击步枪-烽火地带-6G95KLS0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">满改方案2--轻语版本+重枪管</p>
+                    <div class="price-badge">$43w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K416突击步枪-烽火地带-6G95KR40BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">半改方案1--纯绿</p>
+                    <div class="price-badge">$30w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K416突击步枪-烽火地带-6G95LDC0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+
+                <div class="desc-container">
+                    <p class="config-text">半改方案2--100腰射!!!</p>
+                    <div class="price-badge">$28w</div>
+                    <div class="code-box" onclick="copyCode(this)">
+                        <span class="copy-notice">复制成功!</span>
+                        <code>K416突击步枪-烽火地带-6G95LFO0BGCNVNLG59K9O</code> 
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- 可以继续添加更多配置 -->
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://Iamgenshinmaster.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-exp3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/03/28/exp3/" class="article-date">
-  <time class="dt-published" datetime="2024-03-28T09:07:08.000Z" itemprop="datePublished">2024-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/28/exp3/">exp3_report</a>
-    </h1>
-  
+    <script>
+        // 复制改枪码的功能
+        function copyCode(element) {
+            const code = element.querySelector('code').innerText;
+            navigator.clipboard.writeText(code);
+            
+            // 显示复制反馈
+            const notice = element.querySelector('.copy-notice');
+            notice.style.display = 'block';
+            setTimeout(() => {
+                notice.style.display = 'none';
+            }, 1500);
+        }
+        function loadWeapons() {
+            const container = document.querySelector('.card-container');
+            
+            weapons.forEach(weapon => {
+                container.innerHTML += `
+                    <div class="gun-card">
+                        <div class="title-row">
+                            <h2>${weapon.name}</h2>
+                            <div class="price-tag">$${weapon.price}</div>
+                        </div>
+                        <img src="${weapon.image}" alt="${weapon.name}">
+                        <p>${weapon.desc}</p>
+                        <div class="code-box" onclick="copyCode(this)">
+                            <span class="copy-notice">复制成功!</span>
+                            <code>${weapon.code}</code>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    </script>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <span id="more"></span>
-<p>山东大学   计算机科学与技术   学院<br>   云计算技术   课程实验报告<br> <br>学号：202100130081	姓名： 杜皓阳	班级： 21数据<br>实验题目：利用主流云平台搭建个人博客或网站<br>实验学时：2	        实验日期：   2024.3.28<br>实验目的：熟悉使用主流云平台并搭建个人博客或者网站。<br>具体包括：<br>参考方案：基于主流云平台，设计、实现个人博客或者网站的搭建，撰写实验报告（附带网站链接并可以访问），并在网站上呈现此次实验报告。</p>
-<p>硬件环境： <br>联网的计算机一台</p>
-<p>软件环境：<br>Windows </p>
-<p>实验步骤与内容：<br>1、Github创建账号<br>2、安装Hexo，并与github绑定<br>3、创建并编辑博文<br>4、发表</p>
-<p>结论分析与体会：</p>
-<p>return的个人博客 (iamgenshinmaster.github.io)<br>通过本次实验，在github上创建了第一个个人博客。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://iamgenshinmaster.github.io/2024/03/28/exp3/" data-id="club0i8kj0000bgjufe3ja4li" data-title="exp3_report" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exp3/" rel="tag">exp3</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/03/28/My-New-Post/" class="article-date">
-  <time class="dt-published" datetime="2024-03-28T07:38:12.000Z" itemprop="datePublished">2024-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/28/My-New-Post/">Genshin</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <span id="more"></span>
-<p>《原神》是由上海米哈游网络科技股份有限公司制作发行的一款开放世界冒险游戏，于2017年1月底立项，原初测试于2019年6月21日开启，再临测试于2020年3月19日开启，启程测试于2020年6月11日开启，PC版技术性开放测试于9月15日开启，公测于2020年9月28日开启。在数据方面，同在官方服务器的情况下，iOS、PC、Android平台之间的账号数据互通，玩家可以在同一账号下切换设备。</p>
-<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://iamgenshinmaster.github.io/2024/03/28/My-New-Post/" data-id="cluaxftif0000jwju1qoq0pd2" data-title="Genshin" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Genshin-Games/" rel="tag">-Genshin -Games</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Genshin-Games/" rel="tag">-Genshin -Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/exp3/" rel="tag">exp3</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Genshin-Games/" style="font-size: 10px;">-Genshin -Games</a> <a href="/tags/exp3/" style="font-size: 10px;">exp3</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">三月 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/03/28/exp3/">exp3_report</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/28/My-New-Post/">Genshin</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 Haoyang Du<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
 </html>
